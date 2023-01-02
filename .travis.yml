@@ -1,0 +1,18 @@
+language: node_js
+os: osx
+git:
+  depth: 3
+
+before_install:
+  - python
+
+install:
+  - yarn install
+
+script:
+ - yarn deploy
+
+deploy:
+  provider: heroku
+  
+
